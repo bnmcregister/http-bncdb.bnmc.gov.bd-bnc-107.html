@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Data View</title>
+    <style>
+        /* General Setup */
+        body {
+            font-family: 'Times New Roman', Times, serif; 
+            margin: 0;
+            padding: 10px; 
+            background-color: white; 
+            font-size: 14px;
+        }
+
+        /* CONTAINER STYLES - নো-রেডিয়াস ও শ্যাডো */
+        .container {
+            max-width: 450px; 
+            margin: 0 auto; 
+            background-color: #B0E0E6; 
+            padding: 15px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+            border-radius: 0; 
+            position: relative;
+        }
+
+        /* --- Personal Details Section --- */
+        
+        .details-box {
+            display: flex;
+            align-items: flex-start;
+            font-size: 1.1em;
+            padding: 0;
+            margin-bottom: 15px; 
+        }
+        
+        .personal-info-container {
+            flex-grow: 1;
+        }
+        .info-row {
+            margin-bottom: 3px;
+            display: flex;
+            line-height: 1.4;
+            color: #333;
+            font-size: 1em;
+            text-align: left;
+        }
+        
+        .info-row .info-label {
+            font-weight: normal; 
+            color: #000;
+            min-width: 160px; 
+            margin-right: 5px;
+            white-space: nowrap;
+        }
+        .info-row .data {
+            font-weight: normal; 
+            color: #000;
+            text-align: left;
+        }
+        
+        /* KEY CHANGES: প্রোফাইল ছবিটি আরও উপরে-নিচে চ্যাপ্টা করা হয়েছে */
+        .profile-pic {
+            width: 65px;    
+            height: 55px;   /* Changed: উচ্চতা আরও কমানো হলো (উপরে-নিচে আরও চ্যাপ্টা) */
+            background-color: #e6e6e6; 
+            margin-left: -15px; 
+            border: 3px solid #4CAF50; 
+            object-fit: cover; 
+            border-radius: 0px; 
+            flex-shrink: 0; 
+        }
+        
+        /* --- Registration Table Section --- */
+        
+        .registration-table {
+            width: 100%;
+            border-collapse: collapse; 
+            border-spacing: 0; 
+            text-align: center;
+            margin-top: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+        .registration-table th, .registration-table td {
+            border: 1px dotted #888; 
+            padding: 8px 4px; 
+            font-size: 0.9em; 
+            vertical-align: middle;
+            color: #333;
+        }
+
+        .registration-table th {
+            background-color: transparent; 
+            color: #000;
+            font-weight: bold;
+            font-size: 0.85em;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .status-renewed {
+            color: #4CAF50; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="details-box">
+            
+            <div class="personal-info-container">
+                
+                <div class="info-row"><strong class="info-label">Full Name (English):</strong> <span class="data">TOHIDUR RAHMAN</span></div>
+                <div class="info-row"><strong class="info-label">Father's Name:</strong> <span class="data">MD. BABUL HOSSAIN</span></div>
+                <div class="info-row"><strong class="info-label">Mother's Name:</strong> <span class="data">MST. TAHMINA BEGUM</span></div>
+                
+                <div class="info-row"><strong class="info-label">Permanent Address:</strong> <span class="data">Union Parishad Road, Kashinagar, Chuddagram, Cumilla</span></div>
+                
+                <div class="info-row"><strong class="info-label">Working Place:</strong> <span class="data"></span></div>
+                <div class="info-row"><strong class="info-label">Position:</strong> <span class="data"></span></div>
+            </div>
+            
+            <img src="https://i.ibb.co/zW1XLnKS/Picsart-25-10-02-12-35-23-018.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+
+        <table class="registration-table">
+            <thead>
+                <tr>
+                    <th>Registration NO</th>
+                    <th>Course Name</th>
+                    <th>Institution</th>
+                    <th>Date of Registration</th>
+                    <th>Date of Renew</th>
+                    <th>Renew Upto</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>107232</td>
+                    <td>Diploma in Nursing Science and Midwifery (3 Year)</td>
+                    <td>Salauddin Nursing Institute,Dhaka</td>
+                    <td>2025-09-19</td>
+                    <td>2025-12-21</td>
+                    <td>2030-12-20</td>
+                    <td><span class="status-renewed">Renewed</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+</html
